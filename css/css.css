@@ -1,79 +1,97 @@
 *{
   box-sizing: border-box;
-}
+  }
 
+body{
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+} 
 
-
-.row {
- 
-  width: 100%;
-  position: relative;
- 
-}
-
-
-
- p { 
-  position: relative;
-  border: 1px solid black;
-  background: #d1ebf7;
-  overflow: hidden;
-  width: 80%;
-  height: 180px;
-  margin: 0 auto 15px;
-  top:50px;
-}
-
-span{
- background-color: #009c8c ;
-  position:relative;
-  top: auto;
-  left: 240px;  
-  border:solid 1px black;
-  font:oblique bold  15px cursive;
-  overflow: hidden;
-  color:white;
- 
-}
 
 .h1{
-  margin:0px 40%;
-  font:oblique bold 50px cursive;
+  text-align: center;
+  padding:30px;
+  font-size: 50px;  
+  margin: 0px;
+  }
+
+.row{
+    width: 100%;
+    }
+
+
+ .box{
+      margin:10px auto 10px auto;
+      padding: 10px;
+ }
+.hotel{
+        border: 1px solid red;
+        background-color: #cccccc;
+        margin: 2px 6px 10px 2px
+      }
+
+h3{
+  border: 1px solid black;
+  position: relative;
+  float: right;
+  margin-top: 0px;
+
 }
 
-@media (min-width: 1200px) 
+p{
+  height: 150px;
+  margin: 20px 6px 6px 6px;
+  padding: 5px;
+
+  }
+
+#hotel_1{
+  background-color: pink;
+}
+
+#hotel_2{
+  background-color: yellow;
+}
+
+#hotel_3{
+  background-color: green;
+}
+
+/*Diseño: en la vista de escritorio (992px y superior)*/
+@media(min-width: 992px)
 {
-    .col-lg-1 {float:left;
-          margin:0px;}
+        .col-lg-4 {
+          float: left;}
 
-  .col-lg-1 {
-    width:33.33%;}
+          .col-lg-4 {
+            width: 33.33%;
+          }
 
-  
 }
 
-/*Tableta (entre 768px y 991px, inclusive)*/
- @media (min-width: 768px) and (max-width: 1199px)
-  {
-    .col-md-2, .col-md-3 {
-    float:left;
-    margin:0px;}
+/*Diseño: en la vista de tableta (entre 768px y 991px, inclusive)*/
+@media(min-width: 768px) and (max-width: 991px)
+{
+        .col-md-6, .col-md-12{
+          float: left;}
 
-    .col-md-2  {
-    width:50%;} 
+          .col-md-6{
+            width:50%;
+          }
 
-    .col-md-3{
-    width: 100% }
-  }
-        
+          .col-md-12{
+            width:100%;
+          }
 
-  /*móvil (igual o menor a 767 px)*/
-   @media(max-width: 767px)
-    {
-      .col-sm-3 {
-      float:left;
-      margin:0px; }
-    
-    .col-sm-3  {
-         width:100%;} 
-  }
+}
+
+/*Diseño: en la vista móvil (igual o menor a 767 px)*/
+@media(min-width: 1px) and (max-width: 767px)
+{
+        .col-sm-12{
+          float: left;}
+
+          .col-sm-12{
+            width:100%;
+          }
+
+}
